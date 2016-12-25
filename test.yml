@@ -1,0 +1,18 @@
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: iscsipvtest
+spec:
+  capacity:
+    storage: 1Gi
+  accessModes:
+    - ReadWriteOnce
+  iscsi:
+     targetPortal: 10.200.10.1
+     iqn: iqn.2002-03.com.compellent:5000d3100335b621
+     lun: 99
+     fsType: 'ext4'
+     readOnly: false
+
+
+
