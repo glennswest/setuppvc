@@ -1,0 +1,4 @@
+iscsiadm -m discovery -t st -p 10.200.10.1
+iscsiadm -m discovery -t st -p 10.200.10.1 -l
+iscsiadm -m discovery -t st -p 10.200.11.1
+iscsiadm -m discovery -t st -p 10.200.11.1 -l
